@@ -79,6 +79,15 @@
     resize();
     frameId = window.requestAnimationFrame(draw);
 
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(resize).catch(() => {});
+    }
+
+    if ("ResizeObserver" in window) {
+      const resizeObserver = new ResizeObserver(() => resize());
+      resizeObserver.observe(canvas);
+    }
+
     window.addEventListener("resize", () => {
       window.clearTimeout(resize._timer);
       resize._timer = window.setTimeout(resize, 180);
