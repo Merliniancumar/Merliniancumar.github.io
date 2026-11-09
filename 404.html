@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Ruta no encontrada | Merlín Ian Cumar Vinci</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#040807">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <main class="error-page" id="contenido">
+    <canvas class="matrix" id="matrix" aria-hidden="true"></canvas>
+    <div class="error-content">
+      <p class="section-label">error 404</p>
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1>Ruta no<br><span class="grad">encontrada.</span></h1>
+      <p class="error-lead">La página que buscás no existe o cambió de lugar.</p>
+      <div class="error-terminal" aria-label="Sugerencia de terminal">
+        <span class="prompt">$</span> cd /inicio <span class="cursor" aria-hidden="true"></span>
+      </div>
+      <a class="btn btn-primary" href="/">
+        Volver al inicio
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
